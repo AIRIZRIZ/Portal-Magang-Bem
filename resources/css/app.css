@@ -1,0 +1,142 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --brutal-blue: #0B2F9F;      /* Biru Navy Elektrik (Lebih Premium & Adem) */
+    --brutal-yellow: #FEE715;    /* Kuning Stabilo Terang */
+    --brutal-black: #101820;     /* Hitam Pekat */
+    --brutal-white: #FFFFFF;
+    --brutal-bg : #FFFFFF;
+
+    /* Warna Background Konten (Putih Agak Kebiruan) */
+}
+
+[data-theme="dark"] {
+    --brutal-blue: #111827;
+
+    --brutal-bg: #0f172a;
+    --card-bg: #1e293b;
+
+    --text-main: #f8fafc;
+    --text-muted: #cbd5e1;
+
+    --brutal-black: #f8fafc;
+    --brutal-white: #0f172a;
+}
+
+body {
+    background-color: var(--brutal-bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* KUSTOMISASI ROUNDED KAKU (RETRO BRUTALISM) */
+.brutal-card {
+    background-color: var(--card-bg);
+    border: 3px solid var(--brutal-black) !important;
+    border-radius: 12px !important; /* Rounded Halus tapi Tetap Kaku */
+    box-shadow: 6px 6px 0px var(--brutal-black) !important;
+    transition: all 0.15s ease-in-out;
+}
+
+.brutal-btn-yellow {
+    background-color: var(--brutal-yellow);
+    color: var(--brutal-black);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 3px solid var(--brutal-black) !important;
+    border-radius: 8px !important;
+    box-shadow: 4px 4px 0px var(--brutal-black) !important;
+}
+
+.brutal-btn-yellow:hover {
+    background-color: var(--brutal-white);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--brutal-black) !important;
+}
+
+.brutal-btn-dark {
+    background-color: var(--brutal-black);
+    color: var(--brutal-white);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 3px solid var(--brutal-black) !important;
+    border-radius: 8px !important;
+    box-shadow: 4px 4px 0px var(--brutal-black) !important;
+}
+
+.brutal-btn-dark:hover {
+    background-color: var(--brutal-yellow);
+    color: var(--brutal-black);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--brutal-black) !important;
+}
+
+/* NAVBAR STYLE RECONSTRUCTION */
+.custom-navbar {
+    background-color: var(--brutal-blue) !important;
+    border-bottom: 4px solid var(--brutal-black) !important;
+}
+
+.custom-brand {
+    background-color: var(--brutal-yellow);
+    color: black !important;
+    font-weight: 900;
+    border: 3px solid var(--brutal-black);
+    border-radius: 8px;
+    padding: 6px 15px;
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 8px 16px !important;
+    border-radius: 6px;
+}
+
+.custom-navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--brutal-yellow) !important;
+}
+
+/* FOOTER STYLE */
+.custom-footer {
+    background-color: var(--brutal-black) !important;
+    color: var(--brutal-white) !important;
+    border-top: 4px solid var(--brutal-black) !important;
+}
+.custom-footer a {
+    color: var(--brutal-white) !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+.custom-footer a:hover {
+    color: var(--brutal-yellow) !important;
+}
+
+
+
+[data-theme="dark"] .text-dark {
+    color: #f8fafc !important;
+}
+
+[data-theme="dark"] .text-muted {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background: #1e293b !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background: #334155 !important;
+}
+
+[data-theme="dark"] .card {
+    background: #1e293b !important;
+    color: #f8fafc !important;
+}
+
